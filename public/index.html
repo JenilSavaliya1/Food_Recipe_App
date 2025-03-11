@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Recommender</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h1>Welcome to Recipe Recommender</h1>
+      <h2>Create your Meal Plan</h2>
+      <form id="mealForm"> 
+        <div class="form-group">
+          <label for="calories">Target Calories</label>
+          <input
+            type="number"
+            id="calories"
+            name="calories"
+            placeholder="Enter calories.."
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="diet"
+            >Diet (e.g., Vegetarian, Vegan, Non-Vegetarian)</label
+          >
+          <input type="text" id="diet" name="diet" placeholder="Enter diet.." />
+        </div>
+        <div class="form-group">
+          <label for="exclude">Exclude Ingredients</label>
+          <input
+            type="text"
+            id="exclude"
+            name="exclude"
+            placeholder="Enter exclude.."
+          />
+        </div>
+        <input type="submit" value="Get Plan" />
+      </form>
+    </div>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
