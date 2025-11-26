@@ -1,0 +1,94 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  padding: 20px 5%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+header nav a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* MAIN CONTENT */
+.container {
+  padding: 60px 5% 80px 5%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  max-width: 850px;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.about-card h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.about-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  color: #f1f1f1;
+}
+
+.about-card .section-title {
+  margin-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #ffdddd;
+}
+
+.intro {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.closing {
+  margin-top: 30px;
+  font-style: italic;
+  color: #ffeaea;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: rgba(0,0,0,0.25);
+  color: white;
+  font-size: 0.9rem;
+}

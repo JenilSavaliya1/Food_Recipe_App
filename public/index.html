@@ -5,40 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Recommender</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div class="box">
-      <h1>Welcome to Recipe Recommender</h1>
-      <h2>Create your Meal Plan</h2>
-      <form id="mealForm"> 
-        <div class="form-group">
-          <label for="calories">Target Calories</label>
-          <input
-            type="number"
-            id="calories"
-            name="calories"
-            placeholder="Enter calories.."
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="diet"
-            >Diet (e.g., Vegetarian, Vegan, Non-Vegetarian)</label
-          >
-          <input type="text" id="diet" name="diet" placeholder="Enter diet.." />
-        </div>
-        <div class="form-group">
-          <label for="exclude">Exclude Ingredients</label>
-          <input
-            type="text"
-            id="exclude"
-            name="exclude"
-            placeholder="Enter exclude.."
-          />
-        </div>
-        <input type="submit" value="Get Plan" />
-      </form>
-    </div>
+
+    <!-- HEADER -->
+    <header>
+      <div class="logo">🍽️ Recipe Recommender</div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <section class="container">
+      <div class="box animate">
+        <h1>Plan Your Perfect Meal</h1>
+        <p class="subtitle">Enter your preferences to generate a customized meal plan.</p>
+
+        <form id="mealForm">
+          <div class="form-group">
+            <label for="calories">Target Calories</label>
+            <input type="number" id="calories" name="calories" placeholder="e.g., 1800" required />
+          </div>
+
+          <div class="form-group">
+            <label for="diet">Diet Type</label>
+            <input type="text" id="diet" name="diet" placeholder="Vegetarian, Vegan, Keto..." />
+          </div>
+
+          <div class="form-group">
+            <label for="exclude">Exclude Ingredients</label>
+            <input type="text" id="exclude" name="exclude" placeholder="e.g., nuts, gluten, dairy" />
+          </div>
+
+          <button type="submit" class="btn">Generate Plan</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Recipe Recommender | Made by Jenil</p>
+    </footer>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>
